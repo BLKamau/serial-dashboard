@@ -1,0 +1,63 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Poetry ---
+# poetry.lock SHOULD be committed for applications (reproducible builds).
+# Uncomment the next line only if this becomes a library where consumers
+# should resolve their own versions:
+# poetry.lock
+
+# --- Testing / coverage ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
+
+# --- PyInstaller ---
+*.manifest
+*.spec
+
+# --- App runtime data (do not commit generated/local data) ---
+data_storage/
+*.db
+*.sqlite3
+logs/
+*.log
+
+# --- Environment / secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Qt / PySide specific ---
+*.qmlc
+*.jsc
+
+# --- Editors / IDEs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+desktop.ini

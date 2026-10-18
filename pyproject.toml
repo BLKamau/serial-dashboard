@@ -1,0 +1,33 @@
+[project]
+name = "serial-dashboard"
+version = "0.1.0"
+description = "A pyside6 based desktop sensor dashboard and logger"
+authors = [{ name = "Thabo", email = "mantsimat@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.12,<3.16"
+dependencies = [
+    "pyqt6 (>=6.11.0,<7.0.0)",
+    "pyqtgraph (>=0.14.0,<0.15.0)",
+    "pyserial (>=3.5,<4.0)",
+    "bcrypt (>=5.0.0,<6.0.0)",
+    "platformdirs (>=4.13.3,<5.0.0)",
+    "python-dotenv (>=1.2.4,<2.0.0)",
+    "pyside6 (>=6.12.0,<7.0.0)",
+]
+
+[tool.poetry]
+packages = [{ include = "serial_dashboard", from = "src" }]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.1.1,<10.0.0)",
+    "pytest-qt (>=4.5.0,<5.0.0)",
+    "black (>=26.10.1,<27.0.0)",
+    "ruff (>=0.17.1,<0.18.0)",
+    "mypy (>=2.4.0,<3.0.0)",
+    "pyinstaller (>=6.22.3,<7.0.0)"
+]
