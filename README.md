@@ -20,7 +20,6 @@ A cross-platform desktop application built with **PySide6** for monitoring, logg
 | GUI                   | PySide6                              |
 | Live plotting         | pyqtgraph                            |
 | Serial I/O            | pyserial                             |
-| Password hashing      | bcrypt                               |
 | Storage               | SQLite (built-in `sqlite3`) + CSV    |
 | OS-specific paths     | platformdirs                         |
 | Dependency management | Poetry                               |
@@ -36,7 +35,7 @@ A cross-platform desktop application built with **PySide6** for monitoring, logg
 ### Installation
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/BLKamau/serial-dashboard.git
 cd serial-dashboard
 poetry install
 ```
@@ -57,14 +56,10 @@ poetry run python -m serial_dashboard.main
 
 ```bash
 poetry run pytest
-```
 
-### Lint and format
+# or
 
-```bash
-poetry run ruff check .
-poetry run black .
-poetry run mypy src
+make test
 ```
 
 ## Project Structure
@@ -89,4 +84,4 @@ In active development. See the project plan for current phase and scope.
 
 ## License
 
-To be decided.
+MIT License

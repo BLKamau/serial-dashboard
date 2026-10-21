@@ -29,5 +29,8 @@ dev = [
     "black (>=26.10.1,<27.0.0)",
     "ruff (>=0.17.1,<0.18.0)",
     "mypy (>=2.4.0,<3.0.0)",
-    "pyinstaller (>=6.22.3,<7.0.0)"
+    "pyinstaller (>=6.22.3,<7.0.0)",
 ]
+
+[project.scripts]
+serial-dashboard = "src.serial_dashboard.app:main"
