@@ -20,11 +20,10 @@ from PySide6.QtWidgets import QApplication
 from serial_dashboard.ui.main_window import MainWindow
 
 
-# --- Main App lication Entry ---
+# --- Main Application Entry ---
 def main():
     app = QApplication(sys.argv)
-    app.setApplicationName("Seiral Dashboard")
-    app.setApplicationVersion("Ver: 0.0.1")
+    app.setApplicationName("Serial Dashboard")
     window = MainWindow()
     window.show()
     return app.exec() # Main app loop

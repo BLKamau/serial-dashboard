@@ -19,6 +19,6 @@ class MainWindow(QMainWindow):
 
     def __init__(self) -> None:
         super().__init__()
-        self.setWindowTitle("MyApp")
+        self.setWindowTitle("Serial Dashboard")
 
 
